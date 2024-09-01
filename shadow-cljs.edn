@@ -1,0 +1,10 @@
+{:deps {}
+
+ :builds
+ {:my-project/main
+  {:target      :browser
+   :modules     {:main {:entries [my-project.ui]}}
+   :output-dir  "resources/public/ui"
+   :asset-path  "/ui"
+   :devtools    {:repl-pprint true
+                 :watch-dir   "resources/public"}}}}
